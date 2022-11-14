@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  color: white;
+  background: #2dd4bf;
+}
+
+.doubleSlider__container {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.doubleSlider {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0; 
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none; 
+  background-color: #C6C6C6;
+}
+
+.doubleSlider::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all;
+  -webkit-appearance: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #2dd4bf;
+}
+
+.doubleSlider::-webkit-slider-thumb:hover,
+.doubleSlider::-webkit-slider-thumb:focus {
+  background: #2dd4bf;
+}
+
+.doubleSlider::-webkit-slider-thumb:active {
+  background: #2dd4bf;
+  box-shadow:  0 0 9px #2dd4bf;
+  -webkit-box-shadow: 0 0 9px #2dd4bf;
+}
+
+#sliderMin,
+#sliderMax {
+  height: 0;
+  z-index: 4;
+}

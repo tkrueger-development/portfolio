@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "client-install": "cd client & npm run client-install && cd ..",
+    "server-install": "cd server && npm run server-install && cd ..",
+    "client-install-ci": "cd client && npm run client-install-ci && cd ..",
+    "server-install-ci": "cd server && npm run server-install-ci && cd ..",
+    
+    "client-lint": "cd client && npm run client-lint && cd ..",
+    "server-lint": "cd server && npm run server-lint && cd ..",
+
+    "server-test-unit": "cd server && npm run server-test-unit && cd ..",
+    "server-test-integration": "cd server && npm run server-test-integration && cd .."
+  }
+}
