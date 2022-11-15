@@ -1,5 +1,4 @@
 ## Wind and wave - portfolio project
----
 
 <strong>All entries of .env are local to docker compose.</strong>
 
