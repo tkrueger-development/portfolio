@@ -9,7 +9,7 @@
   "scripts": {
     "tdd": "vitest",
     "start-dev": "npx tsx watch ./src/server.ts",
-    "server-install-": "npm install",
+    "server-install": "npm install",
     "server-install-ci": "npm ci",
     "server-lint": "eslint . --ext .ts",
     "server-test-unit": "vitest run --config vite.config.unit.ts",
